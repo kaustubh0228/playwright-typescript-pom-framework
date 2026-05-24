@@ -29,3 +29,11 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Run Allure Action
+      uses: allure-framework/allure-report@v0
+      with:
+        # Path to the generated report directory
+        # By default, it's set to `./allure-report`
+        report-directory: "./allure-report"
+        # GitHub Token that's used for posting the comments in Pull Requests
+        github-token: ${{ secrets.GITHUB_TOKEN }}
