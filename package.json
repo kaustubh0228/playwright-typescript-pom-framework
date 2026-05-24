@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/kaustubh0228/playwright-typescript-pom-framework#readme",
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.9.0"
   },
   "dependencies": {
     "dotenv": "^17.4.2"
